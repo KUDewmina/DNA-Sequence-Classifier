@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Dna-Flat--Streamline-Fluent-Emoji.png') }}">
+        <title>DNA Sequence Classifier</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">    
+    </head>
+
+    <body>
+        <img src="{{ url_for('static', filename='header.png') }}" class="header-image">
+
+        <div class="container">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label" style="font-size: xx-large;">Enter Your DNA Sequence Here</label>
+                <form action="/classify" method="post" id="classify_form">
+                    <div class="d-flex align-items-center gap-4" >
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g. ATCGTAGCTAGCTAGCTA" name="sequence">
+                        <button type="submit" class="btn btn-outline-info btn-lg" id="classify">Classify</button>
+                    </div>
+                </form>
+            </div>
+            <div class="weight_container">
+                <div class="progress-container">
+                    <div class="progress" >
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">0%</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor1">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="progress-circle" cx="80" cy="80" r="70" stroke="url(#GradientColor1)" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="progress" >
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">0%</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor2">
+                                    <stop offset="0%" stop-color="#2196f3" />
+                                    <stop offset="100%" stop-color="#00bcd4" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="progress-circle" cx="80" cy="80" r="70" stroke="url(#GradientColor2)" stroke-linecap="round" />
+
+                        </svg>
+                    </div>
+                    <div class="progress" >
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">0%</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor3">
+                                    <stop offset="0%" stop-color="#ff9800" />
+                                    <stop offset="100%" stop-color="#ffeb3b" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="progress-circle" cx="80" cy="80" r="70" stroke="url(#GradientColor3)" stroke-linecap="round" />
+
+                        </svg>
+                    </div>
+                    <div class="progress" >
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">0%</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor4">
+                                <stop offset="0%" stop-color="#BEF192" />
+                                <stop offset="100%" stop-color="#9CD04E" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="progress-circle" cx="80" cy="80" r="70"  stroke="url(#GradientColor4)" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="progress-text">
+                    <div class="text">Virus</div>
+                    <div class="text">Bacteria</div>
+                    <div class="text">Human</div>
+                    <div class="text">Plant</div>
+                </div>
+            </div>
+            <div class="predicted-information">
+                <h2>Your DNA sequence classified</h2>
+                <br>
+                <p class="info-text">Sequence  :   <span class="subtext" id="sequence_val"></span></p>
+                <p class="info-text">Predicted Class  :   <span class="subtext" id="predicted_class_val"></span></p>
+                <p class="info-text">Prediction Confidence  :   <span class="subtext" id="confidence_val"></span></p>
+                <p class="info-text">Detected Motifs  :   <span class="subtext" id="motifs_val"></span></p>
+                <p class="info-text">Accuracy of Classifier  :   <span class="subtext" id="accuracy_val"></span></p>
+                <p class="info-text">Interpretation  :   <span class="subtext" id="interpretation_val"></span></p>
+            </div>
+
+            <form method="post" id="data_input">
+                <div class="predicted-information">
+                    <h2>Enter New Data and Retrain Model</h2>
+                    <br>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="New Sequence" name="new_sequence">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">Select Class</button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Virus</a></li>
+                            <li><a class="dropdown-item" href="#">Bacteria</a></li>
+                            <li><a class="dropdown-item" href="#">Human</a></li>
+                            <li><a class="dropdown-item" href="#">Plant</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                        </ul>
+                        <input type="hidden" name="class_label" id="class_label_input">
+                    </div>
+                    <div class="Retrain">
+                        <button type="button" id="add_to_dataset" class="btn btn-primary" style="font-size: large; background-color: #4b6584; border-color:#4b6584 ;">Add to Dataset</button>
+                        <button type="button" id="reset_dataset" class="btn btn-success" style="font-size: large; background-color: #10ac84; border-color:#10ac84 ">Reset Dataset</button>
+                        <button type="button" id="retrain_model" class="btn btn-danger" style="font-size: large; background-color: #eb3b5a; border-color:#eb3b5a ;">Retrain Model</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+</html>
+        
