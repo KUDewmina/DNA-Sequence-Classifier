@@ -5,6 +5,7 @@ from utils.dataset import motifs_dict
 from keras.models import load_model
 import numpy as np
 import pandas as pd
+import os
 
 app = Flask(__name__)
 
@@ -90,5 +91,6 @@ def restore_dataset():
     return jsonify({"message": "Dataset restored to original!"})
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
+
 
