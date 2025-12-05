@@ -90,4 +90,5 @@ def restore_dataset():
     return jsonify({"message": "Dataset restored to original!"})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
+
