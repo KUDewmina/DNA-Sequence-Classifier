@@ -8,8 +8,12 @@ import pandas as pd
 import os
 
 app = Flask(__name__)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+UTILS_DIR = os.path.join(BASE_DIR, "utils")
 
-model = load_model("utils/dna_classifier.keras")
+MODEL_PATH = os.path.join(UTILS_DIR, "dna_classifier.keras")
+model = load_model(MODEL_PATH)
+#model = load_model("utils/dna_classifier.keras")
 
 @app.route('/')
 def home():
@@ -92,5 +96,6 @@ def restore_dataset():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
+
 
 
