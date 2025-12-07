@@ -35,7 +35,7 @@ A deep learning-based **DNA sequence classifier** that predicts the origin of a 
 
 ---
 
-## Structure of Neural Network model
+## 🧮 Structure of Neural Network model
 <img width="2100" height="1500" alt="Untitled-1" src="https://github.com/user-attachments/assets/37773173-7948-4177-aae1-d1c321f39562" />
 
 
