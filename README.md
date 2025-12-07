@@ -36,6 +36,18 @@ A deep learning-based **DNA sequence classifier** that predicts the origin of a 
 
 ---
 
+## Structure of Neural Network model
+<img width="2100" height="1500" alt="Untitled-1" src="https://github.com/user-attachments/assets/37773173-7948-4177-aae1-d1c321f39562" />
+
+
+## Why This Architecture Works So Well for DNA
+
+- **Large receptive field** → detects motifs anywhere in sequence
+- **Hierarchical learning** → short → medium → long-range patterns
+- **Global pooling** → position-independent motif detection
+- **Heavy dropout** → robust to mutations and noise
+- **Trained end-to-end** → learns biologically meaningful features automatically
+
 ## ⚡ Setup
 
 ### 1. Clone the repository
