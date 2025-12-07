@@ -13,7 +13,8 @@ A deep learning-based **DNA sequence classifier** that predicts the origin of a 
 
 ---
 
-<img width="1548" height="1472" alt="Untitled-3" src="https://github.com/user-attachments/assets/8892f770-7ef4-4be6-956b-3f14e89bb6cf" />
+<img width="1548" height="1472" alt="Untitled-3" src="https://github.com/user-attachments/assets/490086dd-8df2-4385-9e67-a5c1c1509be7" />
+
 
 
 ## 🌟 Features
@@ -39,7 +40,7 @@ A deep learning-based **DNA sequence classifier** that predicts the origin of a 
 <img width="2100" height="1500" alt="Untitled-1" src="https://github.com/user-attachments/assets/37773173-7948-4177-aae1-d1c321f39562" />
 
 
-## Why This Architecture Works So Well for DNA
+### Why This Architecture Works So Well for DNA
 
 - **Large receptive field** → detects motifs anywhere in sequence
 - **Hierarchical learning** → short → medium → long-range patterns
@@ -53,3 +54,11 @@ A deep learning-based **DNA sequence classifier** that predicts the origin of a 
 ```bash
 git clone https://github.com/KUDewmina/DNA-Sequence-Classifier.git
 cd DNA-Sequence-Classifier
+```
+### Or download the ZIP file, extract it, and run the `setup.bat` file.
+
+If your browser doesn't open and run application , Open browser and paste this command
+```bash
+http://127.0.0.1:5000
+```
+The user interface will load correctly.
