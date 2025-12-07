@@ -9,7 +9,14 @@
 ![TensorFlow](https://img.shields.io/badge/tensorflow-2.20.0-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 
 
-A deep learning-based **DNA sequence classifier** that predicts the origin of a DNA sequence (Virus, Bacteria, Human, Plant) and highlights detected motifs. Built with **Keras, TensorFlow, and Flask** for interactive web deployment.
+ ## A Deep learning–based application designed to determine the biological origin of a DNA sequence.Built with **Keras, Tensorflow, and Flask** for interactive web deployment.
+
+ ### 🔍 Classification Targets
+
+> - 🦠 **Virus**
+> - 🧫 **Bacteria**
+> - 🌱 **Plant**
+> - 🧬 **Human**
 
 ---
 
