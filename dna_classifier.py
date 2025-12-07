@@ -21,6 +21,7 @@ def home():
 @app.route("/classify", methods=["POST"])
 def predict():
     dna_sequence = request.form["sequence"]
+    num_nucs = len(dna_sequence)
     X_new = np.array([one_hot_encode(dna_sequence, MAX_LEN)])
     pred = model.predict(X_new)
     pred_percent = pred[0] * 100
@@ -34,6 +35,7 @@ def predict():
 
     return jsonify({
         "sequence": dna_sequence,
+        "num_nucleotides": num_nucs,
         "probabilities": probs,
         "predicted_class": class_label,
         "confidence": max(pred_percent),
@@ -96,3 +98,4 @@ def restore_dataset():
 if __name__ == "__main__":
     #app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
     app.run()
+
