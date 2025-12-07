@@ -16,7 +16,7 @@
 > - 🦠 **Virus**
 > - 🧫 **Bacteria**
 > - 🌱 **Plant**
-> - 🧬 **Human**
+> - 🏃‍♂️ **Human**
 
 ---
 
@@ -28,14 +28,14 @@
 
 - ✅ **Sequence Classification** – Classify DNA sequences into multiple categories.  
 - ✅ **Motif Detection** – Detect common motifs in sequences.  
-- ✅ **Add New Sequences** – Expand the dataset directly from the web interface.  
+- ✅ **Add New Sequences** – Expand the dataset directly from the web interface⭐️.  
 - ✅ **Retrain Model** – Retrain the classifier on **new DNA sequences**.  
 - ✅ **Reset Dataset** – Restore the original dataset with one click.  
 - ✅ **Beautiful Dashboard** – DNA-themed progress circles and interactive UI.  
 
 ---
 
-## 💾 Dataset
+## 📑 Dataset
 
 - Original dataset (generated based on motifs and considering mutations on four classes) : `utils/dna_dataset_original.csv`  
 - Active dataset: `utils/dna_dataset.csv`  
