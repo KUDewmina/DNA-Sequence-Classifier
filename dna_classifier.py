@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, jsonify
-import tensorflow as tf
 from utils.train import MAX_LEN, one_hot_encode, le
 from utils.dataset import motifs_dict
 from keras.models import load_model
@@ -95,7 +94,5 @@ def restore_dataset():
     return jsonify({"message": "Dataset restored to original!"})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
-
-
-
+    #app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
+    app.run()
