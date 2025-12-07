@@ -45,6 +45,7 @@ form1.addEventListener("submit", function (e) {
 
         // Fill results
         document.getElementById("sequence_val").innerText = truncateDNAEnd(data.sequence, 30);
+        document.getElementById("num_nucleotides_val").innerText = data.num_nucleotides;
         document.getElementById("predicted_class_val").innerText = data.predicted_class;
         document.getElementById("confidence_val").innerText = data.confidence.toFixed(1) + "%";
         document.getElementById("motifs_val").innerText = data.detected_motifs.join(", ");
@@ -155,4 +156,5 @@ document.getElementById("reset_dataset").addEventListener("click", () => {
 // Helper
 function truncateDNAEnd(dna, max = 30) {
     return dna.length <= max ? dna : dna.slice(0, max) + "...";
+
 }
