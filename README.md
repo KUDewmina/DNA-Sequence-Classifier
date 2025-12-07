@@ -48,7 +48,7 @@ A deep learning-based **DNA sequence classifier** that predicts the origin of a 
 - **Heavy dropout** → robust to mutations and noise
 - **Trained end-to-end** → learns biologically meaningful features automatically
 
-## ⚡ Automated Setup
+## ⚡ Automated Setup (Simple and Fast)
 
 ### Clone the repository
 ```bash
@@ -62,3 +62,55 @@ If your browser doesn't open and run application , Open browser and paste this c
 http://127.0.0.1:5000
 ```
 The user interface will load correctly.
+
+## ⚡ Manual Setup 
+
+Follow this guide if you prefer to configure the app manually.
+
+### 1. Install Python 3.11.0
+
+Download from :
+https://www.python.org/downloads/release/python-3110/
+
+#### During installation:
+
+✔ Enable “Add Python to PATH”
+
+✔ Choose Install for all users
+
+#### Check version:
+```bash
+python --version
+```
+
+### 2. Create a Virtual Environment
+
+#### Inside the project folder:
+```bash
+py -3.11 -m venv venv
+```
+
+### 3. Activate Virtual Environment
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+**Mac/Linux**
+```bash
+source venv/bin/activate
+```
+
+### 4. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run the App
+```bash
+python dna_classifier.py
+```
+#### Then open:
+```bash
+http://127.0.0.1:5000
+```
