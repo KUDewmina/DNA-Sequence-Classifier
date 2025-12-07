@@ -30,7 +30,7 @@ A deep learning-based **DNA sequence classifier** that predicts the origin of a 
 
 ## 💾 Dataset
 
-- Original dataset: `utils/dna_dataset_original.csv`  
+- Original dataset (generated based on motifs and considering mutations on four classes) : `utils/dna_dataset_original.csv`  
 - Active dataset: `utils/dna_dataset.csv`  
 - Supports **adding new sequences** through the web app.
 
