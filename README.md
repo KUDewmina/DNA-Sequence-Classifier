@@ -13,9 +13,7 @@ A deep learning-based **DNA sequence classifier** that predicts the origin of a 
 
 ---
 
-<img width="1548" height="1472" alt="Untitled-2" src="https://github.com/user-attachments/assets/565f8aaa-6be3-4f45-8a52-ce9fe8b9c32d" />
 <img width="1548" height="1472" alt="Untitled-3" src="https://github.com/user-attachments/assets/8892f770-7ef4-4be6-956b-3f14e89bb6cf" />
-
 
 
 ## 🌟 Features
