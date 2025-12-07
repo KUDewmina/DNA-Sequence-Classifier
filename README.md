@@ -22,7 +22,7 @@ A deep learning-based **DNA sequence classifier** that predicts the origin of a 
 - ✅ **Sequence Classification** – Classify DNA sequences into multiple categories.  
 - ✅ **Motif Detection** – Detect common motifs in sequences.  
 - ✅ **Add New Sequences** – Expand the dataset directly from the web interface.  
-- ✅ **Retrain Model** – Retrain the classifier on new data with **live progress visualization**.  
+- ✅ **Retrain Model** – Retrain the classifier on **new DNA sequences**.  
 - ✅ **Reset Dataset** – Restore the original dataset with one click.  
 - ✅ **Beautiful Dashboard** – DNA-themed progress circles and interactive UI.  
 
