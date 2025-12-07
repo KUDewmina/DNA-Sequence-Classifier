@@ -40,5 +40,5 @@ A deep learning-based **DNA sequence classifier** that predicts the origin of a 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/DNA-Sequence-Classifier.git
+git clone https://github.com/KUDewmina/DNA-Sequence-Classifier.git
 cd DNA-Sequence-Classifier
