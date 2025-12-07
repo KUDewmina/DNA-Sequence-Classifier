@@ -121,3 +121,10 @@ python dna_classifier.py
 ```bash
 http://127.0.0.1:5000
 ```
+
+---
+
+## 🤝 Contributing
+
+### Pull requests and feature suggestions are welcome!
+### If you’d like to improve accuracy, UI, dataset quality, or add new tools — feel free to contribute.
