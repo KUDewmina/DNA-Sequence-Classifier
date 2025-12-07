@@ -1,13 +1,13 @@
 # 🧬 DNA Sequence Classifier
 
-![Python](https://img.shields.io/badge/python-3.11.0-blue.svg)
-![Flask](https://img.shields.io/badge/flask-3.1.2-lightgrey)
-![Keras](https://img.shields.io/badge/keras-3.11.3-red)
-![NumPy](https://img.shields.io/badge/numpy-2.3.5-yellow)
-![Pandas](https://img.shields.io/badge/pandas-2.3.3-blueviolet)
-![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.7.2-orange)
-![TensorFlow](https://img.shields.io/badge/tensorflow-2.20.0-orange)
-![License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/python-3.11.0-3776AB?style=flat-square&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/flask-3.1.2-000000?style=flat-square&logo=flask&logoColor=white)
+![Keras](https://img.shields.io/badge/keras-3.11.3-D00000?style=flat-square&logo=keras&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-2.3.5-013243?style=flat-square&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-2.3.3-150458?style=flat-square&logo=pandas&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.7.2-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/tensorflow-2.20.0-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-4CAF50?style=flat-square)
 
 
 A deep learning-based **DNA sequence classifier** that predicts the origin of a DNA sequence (Virus, Bacteria, Human, Plant) and highlights detected motifs. Built with **Keras, TensorFlow, and Flask** for interactive web deployment.
