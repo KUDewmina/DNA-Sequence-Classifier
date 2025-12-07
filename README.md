@@ -48,9 +48,9 @@ A deep learning-based **DNA sequence classifier** that predicts the origin of a 
 - **Heavy dropout** → robust to mutations and noise
 - **Trained end-to-end** → learns biologically meaningful features automatically
 
-## ⚡ Setup
+## ⚡ Automated Setup
 
-### 1. Clone the repository
+### Clone the repository
 ```bash
 git clone https://github.com/KUDewmina/DNA-Sequence-Classifier.git
 cd DNA-Sequence-Classifier
