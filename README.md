@@ -29,7 +29,7 @@
 - ✅ **Sequence Classification** – Classify DNA sequences into multiple categories.  
 - ✅ **Motif Detection** – Detect common motifs in sequences.  
 - ✅ **Add New Sequences** – Expand the dataset directly from the web interface⭐️.  
-- ✅ **Retrain Model** – Retrain the classifier on **new DNA sequences**.  
+- ✅ **Retrain Model** – Retrain the classifier on **new DNA sequences**. (Retraining time will depend on your system settings). 
 - ✅ **Reset Dataset** – Restore the original dataset with one click.  
 - ✅ **Beautiful Dashboard** – DNA-themed progress circles and interactive UI.  
 
