@@ -21,6 +21,7 @@ def home():
 @app.route("/classify", methods=["POST"])
 def predict():
     dna_sequence = request.form["sequence"]
+    dna_sequence = "".join(dna_sequence.split()).upper()
     num_nucs = len(dna_sequence)
     X_new = np.array([one_hot_encode(dna_sequence, MAX_LEN)])
     pred = model.predict(X_new)
