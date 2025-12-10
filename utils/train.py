@@ -13,9 +13,10 @@ MAX_LEN = df["Sequence"].str.len().max()
 accuracy = 89
 
 def one_hot_encode(seq, max_len=MAX_LEN):
-    mapping = {'A':[1,0,0,0],'C':[0,1,0,0],'G':[0,0,1,0],'T':[0,0,0,1]}
+    mapping = {'A':[1,0,0,0,0],'C':[0,1,0,0,0],'G':[0,0,1,0,0],'T':[0,0,0,1,0], 'N':[0,0,0,0,1]}
     seq = seq.upper()
-    seq = seq[:max_len].ljust(max_len, 'A')
+    seq = seq[:max_len].ljust(max_len, 'N')
+    seq = [b if b in mapping else 'N' for b in seq]
     return np.array([mapping[b] for b in seq])
 
 le = LabelEncoder()
@@ -96,3 +97,4 @@ def retrain_model(epochs=20, batch_size=32):
 
 if __name__ == "__main__":
     retrain_model()
+
