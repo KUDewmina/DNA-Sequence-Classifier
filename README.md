@@ -55,6 +55,9 @@
 - **Heavy dropout** → robust to mutations and noise
 - **Trained end-to-end** → learns biologically meaningful features automatically
 
+<img width="2789" height="2368" alt="confusion_matrix" src="https://github.com/user-attachments/assets/82791f48-e72f-472e-a0c0-c82afcf29a74" />
+
+
 ## ⚡ Automated Setup (Simple and Fast)
 
 ### Clone the repository
