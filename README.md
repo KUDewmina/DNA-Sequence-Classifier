@@ -7,7 +7,9 @@
 ![Pandas](https://img.shields.io/badge/pandas-2.3.3-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.7.2-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/tensorflow-2.20.0-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.9.2-11557C?style=flat-square&logo=Plotly&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-0.13.2-9A6FE0?style=flat-square&logo=python&logoColor=white)
+![Pillow](https://img.shields.io/badge/Pillow-11.0.0-FFDD00?style=flat-square&logo=python&logoColor=black)
 
  ## A Deep learning–based application designed to determine the biological origin of a DNA sequence.Built with **Keras, Tensorflow, and Flask** for interactive web deployment.
 
