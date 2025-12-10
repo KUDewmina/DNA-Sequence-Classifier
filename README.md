@@ -55,8 +55,18 @@
 - **Heavy dropout** → robust to mutations and noise
 - **Trained end-to-end** → learns biologically meaningful features automatically
 
+## Here is the Confusion Matrix of current model.
+#### After retraining one time, this can be changed.
+
 <img width="2789" height="2368" alt="confusion_matrix" src="https://github.com/user-attachments/assets/82791f48-e72f-472e-a0c0-c82afcf29a74" />
 
+#### In utils folder there is python script to show confusion matrix.You can run it by entering ,
+
+```bash
+cd <path\to\your\folder>\utils
+python confusion_matrix.py
+```
+#### in your cmd for testing.
 
 ## ⚡ Automated Setup (Simple and Fast)
 
