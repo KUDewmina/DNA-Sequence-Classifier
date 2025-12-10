@@ -65,7 +65,7 @@
 #### In utils folder there is python script to show confusion matrix.You can run it by entering ,
 
 ```bash
-cd <path\to\your\folder>\utils
+cd <path\to\your\folder>
 python confusion_matrix.py
 ```
 #### in your cmd for testing.
